@@ -1,0 +1,19 @@
+= Testsuites Gradle Library (Sandbox)
+
+In 2010 Simon Stewart, Google Test Engineer, wrote that they categorize tests into link:https://testing.googleblog.com/2010/12/test-sizes.html[small, medium and large].
+This repository shows how to split tests into these three categories with gradle.
+An older approach via the community test suite plugin can be found on link:https://github.com/Richargh/testsets-plugin-krdl-kt-sandbox[Github].
+
+*Features*
+
+* Multi-project
+* Small, Medium, Large Test suites via official but incubating link:https://docs.gradle.org/8.4/userguide/jvm_test_suite_plugin.html[Gradle JVM Test Suite Plugin]
+* Shared Test Fixtures via official link:https://docs.gradle.org/current/userguide/java_testing.html#sec:java_test_fixtures[Gradle JVM Test Fixtures Plugin]
+
+== Usage
+
+* Build and run all tests: `./gradlew build`
+* Run all tests: `./gradlew check`
+* Run just the small tests: `./gradlew test`
+
+You can play around by enabling, disabling or changing tags of tests.
